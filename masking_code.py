@@ -225,6 +225,7 @@ def save_masks(im1name, im2name):
     skio.imsave(name1 + "_mask.png", source_mask)
     skio.imsave(name2 + "_mask.png",target_mask)
     skio.imsave(name1 + "_newsource.png", source_im)
+    return source_mask, target_mask, source_im
 
 # Example usage
 imname = "hybrid_python/DerekPicture.jpg"
